@@ -6,28 +6,31 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Fira Code', monospace;
   line-height: 1.6;
-  background: #f9fafb;
-  color: #333;
+  background: #0d1117; /* fondo oscuro */
+  color: #c9d1d9; /* texto gris claro */
 }
 
 /* === Header === */
 header {
-  background: linear-gradient(135deg, #1e2a38, #3c4d63);
-  color: white;
+  background: #161b22;
+  color: #58a6ff;
   padding: 60px 20px;
   text-align: center;
+  border-bottom: 2px solid #30363d;
 }
 
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: #00ff88; /* verde brillante estilo consola */
 }
 
 header p {
   font-size: 1.2rem;
   opacity: 0.9;
+  color: #c9d1d9;
 }
 
 nav {
@@ -35,7 +38,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #58a6ff;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
@@ -43,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: #00ff88;
 }
 
 /* === Secciones === */
@@ -54,10 +57,10 @@ section {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #1e2a38;
-  border-left: 5px solid #ffcc00;
+  color: #00ff88;
+  border-left: 5px solid #58a6ff;
   padding-left: 10px;
 }
 
@@ -67,11 +70,12 @@ ul {
 }
 
 ul li {
-  background: white;
+  background: #161b22;
   margin: 10px 0;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  border: 1px solid #30363d;
+  color: #c9d1d9;
 }
 
 /* === Proyectos === */
@@ -82,37 +86,65 @@ ul li {
 }
 
 .project {
-  background: white;
+  background: #161b22;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #30363d;
+  transition: transform 0.2s, border 0.2s;
 }
 
 .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  border: 1px solid #00ff88;
 }
 
 .project h3 {
   margin-bottom: 10px;
-  color: #3c4d63;
+  color: #58a6ff;
 }
 
 .project a {
   display: inline-block;
   margin-top: 10px;
-  color: white;
-  background: #1e2a38;
+  color: #0d1117;
+  background: #00ff88;
   padding: 8px 15px;
   border-radius: 5px;
   text-decoration: none;
-  transition: background 0.3s;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
 }
 
 .project a:hover {
-  background: #ffcc00;
-  color: #1e2a38;
+  background: #58a6ff;
+  color: #fff;
+}
+
+/* === Terminal Style (extra) === */
+.terminal {
+  background: #000;
+  color: #00ff88;
+  font-family: 'Fira Code', monospace;
+  text-align: left;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 30px auto 0 auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.terminal p {
+  margin: 5px 0;
+}
+
+.terminal .user {
+  color: #58a6ff;
+  font-weight: bold;
+}
+
+.terminal .arrow {
+  color: #ffcc00;
+  font-weight: bold;
 }
 
 /* === Contacto === */
@@ -121,20 +153,21 @@ ul li {
 }
 
 #contact a {
-  color: #1e2a38;
+  color: #58a6ff;
   text-decoration: none;
   font-weight: bold;
 }
 
 #contact a:hover {
-  color: #ffcc00;
+  color: #00ff88;
 }
 
 /* === Footer === */
 footer {
-  background: #1e2a38;
-  color: white;
+  background: #161b22;
+  color: #8b949e;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+  border-top: 2px solid #30363d;
 }
