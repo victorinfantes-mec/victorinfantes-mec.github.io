@@ -171,3 +171,11 @@ footer {
   margin-top: 40px;
   border-top: 2px solid #30363d;
 }
+.perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* hace la foto redonda */
+  border: 3px solid #00ff88; /* borde verde estilo programador */
+  margin-top: 20px;
+  object-fit: cover; /* para que no se deforme */
+}
