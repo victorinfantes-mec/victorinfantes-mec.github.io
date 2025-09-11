@@ -6,63 +6,91 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Fira Code', monospace;
   color: #fff;
-  
-  /* 🔹 Fondo animado favorito */
   background: url('fondo.jpeg.jpeg') no-repeat center center fixed;
   background-size: cover;
+  min-height: 100vh;
+}
+
+/* Capa oscura para mejorar lectura */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: -1;
 }
 
 /* === Header === */
 header {
-  background: #161b22;
+  background: rgba(22,27,34,0.85);
   color: #58a6ff;
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
   border-bottom: 2px solid #30363d;
+  position: relative;
+  z-index: 1;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #00ff88; /* verde brillante estilo consola */
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  color: #00ff88;
 }
 
 header p {
-  font-size: 1.2rem;
-  opacity: 0.9;
+  font-size: 1rem;
+  opacity: 0.95;
   color: #c9d1d9;
+  margin-bottom: 12px;
 }
 
 nav {
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 nav a {
   color: #58a6ff;
-  margin: 0 15px;
+  margin: 0 12px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 
 nav a:hover {
   color: #00ff88;
 }
 
+/* Perfil */
+.perfil {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #00ff88;
+  margin-top: 16px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* === Secciones === */
+main {
+  position: relative;
+  z-index: 1;
+}
+
 section {
-  padding: 60px 20px;
+  padding: 50px 20px;
   max-width: 1000px;
-  margin: auto;
+  margin: 30px auto;
 }
 
 h2 {
   font-size: 1.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: #00ff88;
   border-left: 5px solid #58a6ff;
   padding-left: 10px;
@@ -74,12 +102,49 @@ ul {
 }
 
 ul li {
-  background: #161b22;
+  background: rgba(22,27,34,0.85);
   margin: 10px 0;
   padding: 15px;
   border-radius: 8px;
   border: 1px solid #30363d;
   color: #c9d1d9;
+}
+
+/* === Formación Complementaria (cards) === */
+#formacion {
+  margin-top: 10px;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+
+.formacion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.formacion-card {
+  background: rgba(22,27,34,0.85);
+  padding: 18px;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  transition: transform 0.18s, border 0.18s;
+}
+
+.formacion-card:hover {
+  transform: translateY(-6px);
+  border: 1px solid #00ff88;
+}
+
+.formacion-card h3 {
+  font-size: 1.05rem;
+  color: #58a6ff;
+  margin-bottom: 8px;
+}
+
+.formacion-card p {
+  color: #c9d1d9;
+  font-size: 0.95rem;
 }
 
 /* === Proyectos === */
@@ -90,7 +155,7 @@ ul li {
 }
 
 .project {
-  background: #161b22;
+  background: rgba(22,27,34,0.85);
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #30363d;
@@ -124,62 +189,34 @@ ul li {
   color: #fff;
 }
 
-/* === Terminal Style (extra) === */
+/* === Terminal style === */
 .terminal {
   background: #000;
   color: #00ff88;
   font-family: 'Fira Code', monospace;
   text-align: left;
-  padding: 20px;
+  padding: 16px;
   border-radius: 8px;
-  max-width: 600px;
-  margin: 30px auto 0 auto;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  max-width: 640px;
+  margin: 18px auto 0 auto;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
 }
 
-.terminal p {
-  margin: 5px 0;
-}
-
-.terminal .user {
-  color: #58a6ff;
-  font-weight: bold;
-}
-
-.terminal .arrow {
-  color: #ffcc00;
-  font-weight: bold;
-}
+.terminal p { margin: 6px 0; }
+.terminal .user { color: #58a6ff; font-weight: bold; }
+.terminal .arrow { color: #ffcc00; font-weight: bold; }
 
 /* === Contacto === */
-#contact p {
-  margin: 10px 0;
-}
-
-#contact a {
-  color: #58a6ff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#contact a:hover {
-  color: #00ff88;
-}
+#contact p { margin: 10px 0; }
+#contact a { color: #58a6ff; text-decoration: none; font-weight: bold; }
+#contact a:hover { color: #00ff88; }
 
 /* === Footer === */
 footer {
-  background: #161b22;
+  background: rgba(22,27,34,0.9);
   color: #8b949e;
   text-align: center;
-  padding: 20px;
+  padding: 18px;
   margin-top: 40px;
   border-top: 2px solid #30363d;
-}
-.perfil {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* hace la foto redonda */
-  border: 3px solid #00ff88; /* borde verde estilo programador */
-  margin-top: 20px;
-  object-fit: cover; /* para que no se deforme */
 }

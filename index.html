@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portafolio - Víctor Infantes</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -11,68 +11,109 @@
 
   <header>
     <h1>Víctor Infantes Sánchez</h1>
-    <p>Desarrollador Web | Estudiante de Ingeniería Mecatrónica</p>
+    <p>Desarrollador de Software | Estudiante de Ingeniería Mecatrónica</p>
+    <!-- Asegúrate de que el archivo se llame exactamente "foto.jpeg" -->
     <img src="foto.jpeg.jpeg" alt="Foto de Víctor Infantes" class="perfil">
-  
 
     <nav>
       <a href="#about">Sobre mí</a>
       <a href="#experience">Experiencia</a>
+      <a href="#formacion">Formación</a>
       <a href="#projects">Proyectos</a>
       <a href="#contact">Contacto</a>
     </nav>
-    <div class="terminal">
-    <p><span class="user">victor@portafolio:~$</span> npm start</p>
-    <p><span class="arrow">></span> Hola, soy <strong>Víctor Infantes</strong> 🚀</p>
-    <p><span class="arrow">></span> Desarrollador Web en formación</p>
-    <p><span class="arrow">></span> Ingeniero Mecatrónico en formación</p>
-    </div>
 
+    <div class="terminal">
+      <p><span class="user">victor@portafolio:~$</span> npm start</p>
+      <p><span class="arrow">></span> Hola, soy <strong>Víctor Infantes</strong> 🚀</p>
+      <p><span class="arrow">></span> Desarrollador Web en formación</p>
+      <p><span class="arrow">></span> Ingeniero Mecatrónico en formación</p>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>Sobre mí</h2>
-    <p>Soy estudiante de Ingeniería Mecatrónica en la Universidad Católica San Pablo, con formación en desarrollo web  y experiencia en proyectos independientes. Me apasiona crear soluciones digitales innovadoras y crecer como profesional en el área de desarrollo web.Tambien tengo experiencia con proyectos con minicontroladores como el esp32.Trabaje con estudiantes de primaria ayudandolos en sus primeros proyectos con esp32.</p>
-  </section>
+  <main>
+    <section id="about">
+  <h2>Sobre mí</h2>
+  <p>
+    Soy de <strong>Arequipa, Perú</strong> 🇵🇪 y actualmente estudio 
+    <strong>Ingeniería Mecatrónica</strong> en la Universidad Católica San Pablo.  
+    Me apasiona el <strong>desarrollo de software</strong> y la creación de soluciones 
+    tecnológicas que impacten en la vida real.  
 
-  <section id="experience">
-    <h2>Experiencia y Educación</h2>
-    <ul>
-      <li><strong>Desarrollador Web (Proyectos Independientes)</strong> – 2023-Actualidad</li>
-      <li><strong>Mentor en proyectos con minicontroladores "ESP32" </strong> –
-      <li><strong>Asistente de Logística</strong>, Michell & Cía S.A. – 2021-2023</li>
-      <li><strong>Ingeniería Mecatrónica</strong>, Universidad Católica San Pablo – 2022-Actualidad</li>
-      <li><strong>Programa Código GO – Desarrollo Web</strong>, Tecsup – 2023</li>
-    </ul>
-  </section>
+    Tengo experiencia trabajando con <strong>microcontroladores ESP32</strong>, 
+    desarrollando proyectos que combinan programación, electrónica y 
+    automatización. Incluso he colaborado como mentor con estudiantes de 
+    primaria, guiándolos en sus primeros pasos en proyectos con ESP32, lo que 
+    fortaleció mis habilidades de comunicación y enseñanza.  
 
-  <section id="projects">
-    <h2>Proyectos</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>Portafolio Personal</h3>
-        <p>Página web personal para mostrar mi CV y proyectos.</p>
-        <a href="#">Ver proyecto</a>
-      </div>
-      <div class="project">
-        <h3>Landing Page de Negocio</h3>
-        <p>Página ficticia para un negocio local, creada con HTML, CSS y JavaScript.</p>
-        <a href="#">Ver proyecto</a>
-      </div>
-      <div class="project">
-        <h3>Mini E-commerce</h3>
-        <p>Prototipo de tienda online con carrito básico.</p>
-        <a href="#">Ver proyecto</a>
-      </div>
-    </div>
-  </section>
+    Mi objetivo es crecer profesionalmente en el mundo del software, 
+    combinando mis conocimientos de mecánica, electrónica y programación para 
+    construir herramientas innovadoras y eficientes. 🚀
+  </p>
+</section>
 
-  <section id="contact">
-    <h2>Contacto</h2>
-    <p>Email: <a href="mailto:victor.infantes@ucsp.edu.pe">victor.infantes@ucsp.edu.pe</a></p>
-    <p>GitHub: <a href="https://github.com/">github.com/victorinfantes</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/">linkedin.com/in/victorinfantes</a></p>
-  </section>
+    <section id="experience">
+      <h2>Experiencia y Educación</h2>
+      <ul>
+        <li><strong>Desarrollador Web (Proyectos Independientes)</strong> – 2023-Actualidad</li>
+        <li><strong>Mentor en proyectos con microcontroladores ESP32</strong></li>
+        <li><strong>Asistente de Logística</strong>, Michell & Cía S.A. – 2021-2023</li>
+        <li><strong>Ingeniería Mecatrónica</strong>, Universidad Católica San Pablo – 2022-Actualidad</li>
+        <li><strong>Programa Código GO – Desarrollo Web</strong>, Tecsup – 2023</li>
+      </ul>
+    </section>
+
+    <!-- === Nueva sección: Formación Complementaria === -->
+    <section id="formacion">
+      <h2>Formación Complementaria</h2>
+      <div class="formacion-grid">
+        <div class="formacion-card">
+          <h3>CS50’s Introduction to Computer Science</h3>
+          <p>HarvardX (edX)</p>
+        </div>
+        <div class="formacion-card">
+          <h3>Responsive Web Design</h3>
+          <p>FreeCodeCamp</p>
+        </div>
+        <div class="formacion-card">
+          <h3>Python for Everybody</h3>
+          <p>University of Michigan (Coursera)</p>
+        </div>
+        <div class="formacion-card">
+          <h3>Full-Stack Web Development</h3>
+          <p>The Odin Project</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Proyectos</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Portafolio Personal</h3>
+          <p>Página web personal para mostrar mi CV y proyectos.</p>
+          <a href="#">Ver proyecto</a>
+        </div>
+        <div class="project">
+          <h3>Landing Page de Negocio</h3>
+          <p>Página ficticia para un negocio local, creada con HTML, CSS y JavaScript.</p>
+          <a href="#">Ver proyecto</a>
+        </div>
+        <div class="project">
+          <h3>Mini E-commerce</h3>
+          <p>Prototipo de tienda online con carrito básico.</p>
+          <a href="#">Ver proyecto</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:victor.infantes@ucsp.edu.pe">victor.infantes@ucsp.edu.pe</a></p>
+      <p>GitHub: <a href="https://github.com/victorinfantes-mec" target="_blank" rel="noopener">github.com/victorinfantes-mec</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/victorinfantes" target="_blank" rel="noopener">linkedin.com/in/victorinfantes</a></p>
+    </section>
+  </main>
 
   <footer>
     <p>© 2024 Víctor Infantes Sánchez - Todos los derechos reservados</p>
